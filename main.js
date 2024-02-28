@@ -1,9 +1,10 @@
-require('update-electron-app')();
-
 // Modules to control application life and create native browser window
 const { app, BrowserWindow, ipcMain } = require('electron');
 // include the Node.js 'path' module at the top of your file
 const path = require('node:path');
+
+const { updateElectronApp } = require('update-electron-app');
+updateElectronApp();
 
 const createWindow = () => {
     // Create the browser window.
